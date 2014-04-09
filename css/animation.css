@@ -1,0 +1,148 @@
+
+box:hover ~ .box10{ 
+    background-color:red;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:3000;
+}
+
+.box10:hover:after{
+    content:'You Lose!';
+    display:block;
+    color:white;
+    font-weight:bold;
+    font-size:40px;
+    background-color:red;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:3000;
+}
+
+.box10:hover {
+    width:100%;
+    height:100%;
+    background-color:red;
+}
+
+.box1 {
+   -webkit-animation: box-anim-1 5s linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 7s;
+}
+
+.box2 {
+    -webkit-animation: box-anim-2 4s  linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration:6s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+.box3 {
+    -webkit-animation: box-anim-3 3s linear;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-duration:6s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.box4 {
+    -webkit-animation: box-anim-4 4s linear;
+    -webkit-animation-delay:6s;
+    -webkit-animation-duration:6s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.box5 {
+    -webkit-animation: box-anim-5 6s linear;
+    -webkit-animation-delay:4s;
+    -webkit-animation-duration:4s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.box6 {
+    -webkit-animation: box-anim-6 10s linear;
+    -webkit-animation-delay:10s;
+    -webkit-animation-duration:  10s;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes box-anim-1 {
+  0% {
+    left:35%;
+    top:0%;
+   }
+  100% {
+    left:75%;
+    top:150%;
+    -webkit-transform: scale(2,1.5) rotate(180deg);
+  }
+}
+
+@-webkit-keyframes box-anim-2 {
+    0% {
+        left:60%;
+        top:0%;
+    }
+    100% {
+        left:0%;
+        top:200%;
+        -webkit-transform:rotate(600deg);
+    }
+}
+
+@-webkit-keyframes box-anim-3 {
+    0% {
+        top:0%;
+        left:10%;
+    }
+    100% {
+        left:10%;
+        top:200%;
+        -webkit-transform:rotate(800deg) scale(.5,2);
+        
+    }
+}
+
+
+@-webkit-keyframes box-anim-4 {
+    0% {
+        top:0%;
+        left:80%;
+    }
+    50% {
+        top:30%;
+        left:35%;
+        -webkit-transform:scale(4,.5) rotate(-150deg);
+    }
+    100% {
+        top:100%;
+        left:130%;
+        -webkit-transform:scale(1,1);
+    }
+}
+
+@-webkit-keyframes box-anim-5 {
+    0% {
+        top:0%;
+        left:0%;
+    }
+    100% {
+        top:100%;
+        left:100%;
+        -webkit-transform:rotate(900deg);
+    }
+}
+
+@-webkit-keyframes box-anim-6 {
+    0% {
+        top:0%;
+        left:100%;
+    }
+    100% {
+        top:150%;
+        left:0%;
+        -webkit-transform:rotate(250deg) scale(15,15);
+    }
+}
